@@ -1,0 +1,31 @@
+CREATE DATABASE MVS_Students;
+
+CREATE TABLE Students
+(
+	StudentID int,
+	StudentGender varchar(6),
+	StuName varchar(255),
+	StuAge int,
+	StuAddress varchar(255),
+	StuCity varchar(255),
+	StuCountry varchar(255),  
+	StuNumPhone int
+)
+
+
+SELECT * FROM Students WHERE StudentGender = "male"
+
+
+SELECT * FROM Students WHERE StudentGender = "female"
+
+
+SELECT * FROM Students WHERE StuAge >= 18
+
+
+INSERT INTO Students (StudentID, StuName) VALUES ('123456789','Lorenzo')
+
+
+UPDATE Students SET StuName = 'new name' WHERE StuCity = 'Chicago'
+
+
+DELETE FROM Students WHERE StuCity = 'Chicago'
